@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Taaski demo</title>
+
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<!-- JQuery CSS -->
+		<link href="js/jquery-ui-1.11.4/jquery-ui.css">
+		<!-- Other CSS -->
+		<link href="css/jqcloud.css" rel="stylesheet">
+		<!-- <link href="css/jquery.gridster.css" rel="stylesheet"> -->
+		<link href="css/container.css" rel="stylesheet">
+		<link href="css/navbar.css" rel="stylesheet">
+		<link href="css/tasks-dashboard.css" rel="stylesheet">
+		<link href="css/title.css" rel="stylesheet">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">taaski</a>
+			</div>
+		
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				
+
+				<form class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#" title="Add a new task"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Hi salito! <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Profile</a></li>
+							<li><a href="#">Settings</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</nav>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 container-desktop">
+					<div class="grid-container">
+					    <ul class="grid" id="grid">
+					        <!-- <li call="task-container" data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+					        	<div class="task-container-little">
+						        	<h4>Task #1</h4>
+						        	<span class="task-due-date">Due date: 15/07/2015</span>
+					        	</div>
+					        	<div class="task-container-big">
+						        	<h2>Task #1</h2>
+						        	<span class="task-description">Description for task #1</span>
+						        	<span class="task-due-date">Due date: 15/07/2015</span>
+					        	</div>
+					        </li>
+					        <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+					        	<div class="task-container-little">
+					        		<div class="row row-sample-first">
+					        			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					        				
+					        			</div>
+					        		</div>
+					        		<div class="row row-sample-second">
+					        			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					        				
+					        			</div>
+					        		</div>	
+					        	</div>
+					        	<div class="task-container-big">
+					        		<div class="row row-sample-first">
+					        			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					        				
+					        			</div>
+					        		</div>
+					        		<div class="row row-sample-second">
+					        			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					        				
+					        			</div>
+					        		</div>
+					        		<div class="row row-sample-third">
+					        			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					        				
+					        			</div>
+					        		</div>
+					        	</div>
+					        </li>
+					        <li data-row="1" data-col="3" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="1" data-col="4" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="1" data-col="5" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="1" data-col="6" data-sizex="1" data-sizey="1"></li>
+
+					        <li data-row="2" data-col="1" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="2" data-col="2" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="2" data-col="3" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="2" data-col="4" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="2" data-col="5" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="2" data-col="6" data-sizex="1" data-sizey="1"></li>
+
+					        <li data-row="3" data-col="1" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="3" data-col="2" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="3" data-col="3" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="3" data-col="4" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="3" data-col="5" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="3" data-col="6" data-sizex="1" data-sizey="1"></li>
+
+					        <li data-row="4" data-col="1" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="4" data-col="2" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="4" data-col="3" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="4" data-col="4" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="4" data-col="5" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="4" data-col="6" data-sizex="1" data-sizey="1"></li>
+
+					        <li data-row="5" data-col="1" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="5" data-col="2" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="5" data-col="3" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="5" data-col="4" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="5" data-col="5" data-sizex="1" data-sizey="1"></li>
+					        <li data-row="5" data-col="6" data-sizex="1" data-sizey="1"></li> -->
+					 
+					        
+					    </ul>
+					</div>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<div class="row container-graphic">
+						<div id="container_charts"></div>
+					</div>
+					<div class="row container-tags">
+						<span class="left-panel-title">Tags cloud</span>
+
+						<div id="container_clouds"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery -->
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/jquery-ui-1.11.4/jquery-ui.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="js/bootstrap.js"></script>
+		<!-- Highcharts JavaScript -->
+		<script src="js/highcharts-4.1.7/highcharts.js"></script>
+		<script src="js/highcharts-4.1.7/modules/exporting.js"></script>
+		<!-- JQ Cloud JavaScript -->
+		<script src="js/jqcloud.js"></script>
+		<!-- GridList JavaScript -->
+		<script src="js/gridList.js"></script>
+		<script src="js/jquery.gridList.js"></script>
+		<!--<script src="js/jquery.gridster.js"></script>-->
+		<!-- Charts JavaScript -->
+		<script src="js/chart.js"></script>
+		<!-- Clouds JavaScript -->
+		<script src="js/cloud.js"></script>
+		<!-- Descktop JavaScript -->
+		<script src="js/tasks-dashboard.js"></script>
+	</body>
+</html>

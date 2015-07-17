@@ -1,0 +1,16 @@
+.test {
+  display:table;
+}
+
+.test > .form-control {
+  display: table-cell;
+  margin-left:-3px;
+}
+
+.test > span {
+  display: table-cell;
+  width:1%;
+  padding:0 3px;
+}
+
+.navbar-form-alt {margin:8px 0}

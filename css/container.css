@@ -1,0 +1,42 @@
+.container-fluid
+{
+	padding: 0px 30px;
+}
+
+.container-desktop
+{
+	/*background-color: #CC4242;*/
+	height: 600px;
+}
+
+.container-graphic
+{
+	/*background-color: #5762B1;*/
+	height: 300px;
+}
+
+.container-tags
+{
+	/*background-color: #5AA75A;*/
+	height: 275px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.row-sample-first {
+	background-color: #E88E8E;
+	height: 100px;
+}
+
+.row-sample-second {
+	background-color: #A392DA;
+	height: 40px;
+}
+
+.row-sample-third {
+	background-color: #7AD8A0;
+	height: 140px;
+	bottom: 0;
+	/*left: 0;*/
+	position: absolute;
+}
